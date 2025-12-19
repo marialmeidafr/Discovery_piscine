@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+
+    <style>
+        body {
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            border: 2px solid black;
+            padding: 20px;
+            text-align: center;
+        }
+
+        input, select {
+            margin: 5px;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Calculator</h1>
+
+        <form onsubmit="calculate(); return false;">
+            <input type="text" id="num1" placeholder="Número 1">
+            
+            <select id="operator">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+                <option value="%">%</option>
+            </select>
+
+            <input type="text" id="num2" placeholder="Número 2">
+
+            <br><br>
+            <input type="submit" value="Try me!">
+        </form>
+    </div>
+
+    <script>
+        setInterval(function () {
+            alert("Please, use me...");
+        }, 30000);
+
+        function calculate() {
+            const n1 = Number(document.getElementById("num1").value);
+            const n2 = Number(document.getElementById("num2").value);
+            const op = document.getElementById("operator").value;
+
+            if (
+                isNaN(n1) || isNaN(n2) ||
+                n1 < 0 || n2 < 0 ||
+                !Number.isInteger(n1) || !Number.isInteger(n2)
+            ) {
+                alert("Error :(");
+                return;
+            }
+
+            if ((op === "/" || op === "%") && n2 === 0) {
+                alert("It's over 9000!");
+                console.log("It's over 9000!");
+                return;
+            }
+
+            let result;
+
+            if (op === "+") result = n1 + n2;
+            else if (op === "-") result = n1 - n2;
+            else if (op === "*") result = n1 * n2;
+            else if (op === "/") result = n1 / n2;
+            else if (op === "%") result = n1 % n2;
+
+            alert(result);
+            console.log(result);
+        }
+    </script>
+
+</body>
+</html>

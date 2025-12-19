@@ -1,0 +1,24 @@
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+}
+.tab {
+    height: 100%;
+    width: 100%;
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+.tab td {
+    border: 2px solid black;
+}
+.unique-cel1 {
+            background-color:  #ffcccc;
+            width: 50%;
+}
+.unique-cel2 {
+            background-color: #ccccff;
+            width: 50%;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+    <div class="sncf-dropdown">
+        <div class="title-container">
+    <div class="title-left">Drop-down menu</div>
+    <div class="title-right">SNCF sandwich</div>
+</div>
+<hr class="divider">
+
+        <img src="sandwich.png" alt="Sandwich" class="sandwich-img">
+        <input type="checkbox" id="open-menu">
+        <label for="open-menu" class="dropdown-title">
+            Choose your sandwich
+        </label>
+
+        <ul class="dropdown-list">
+            <li>
+                <input type="radio" name="sandwich" id="ham">
+                <label for="ham">Ham</label>
+            </li>
+            <li>
+                <input type="radio" name="sandwich" id="cheese">
+                <label for="cheese">Cheese</label>
+            </li>
+            <li>
+                <input type="radio" name="sandwich" id="combo">
+                <label for="combo">Ham & Cheese</label>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

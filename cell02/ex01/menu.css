@@ -1,0 +1,86 @@
+html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f5e6c8; /* pão */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    margin-bottom: 20vh;
+}
+
+.sandwich-img {
+    display: block;
+    width: 200px;
+    margin: 0 auto 10px auto;
+    height: auto;
+}
+
+.title-container {           
+    justify-content: space-between; 
+    align-items: center;          
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #003a8f;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.divider {
+    height: 2px;
+    background-color: #003a8f;
+    margin-bottom: 15px;
+}
+.sncf-dropdown {
+    width: 220px;
+    font-family: Arial, sans-serif;
+}
+
+#open-menu {
+    display: none;
+}
+
+.dropdown-title {
+    display: block;
+    background: #003a8f;
+    color: white;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.dropdown-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 0;
+    overflow: hidden;
+    background: #f5e6c8;
+    transition: max-height 0.3s ease;
+    text-align: center;
+}
+
+#open-menu:checked + .dropdown-title + .dropdown-list {
+    max-height: 300px;
+}
+
+.dropdown-list li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dropdown-list input {
+    display: none;
+}
+
+.dropdown-list label {
+    display: block;
+}
+
+.dropdown-list input:checked + label {
+    background: #c8a94d;
+    font-weight: bold;
+}

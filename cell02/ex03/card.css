@@ -1,0 +1,97 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* página */
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* card */
+.card {
+    width: 300px;
+    min-height: 450px;
+    padding: 30px 20px;
+    background-color: white;
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* título */
+.card-title {
+    font-size: 24px;
+    text-align: center;
+}
+
+/* conteúdo central */
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/* foto */
+.profile-pic {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 10px;
+}
+
+/* login */
+.login {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* descrição */
+.description {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* redes sociais */
+.socials {
+    display: flex;
+    gap: 15px;
+    margin-top: 12px;
+}
+
+.socials a img {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+/* botão */
+.contact-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #111;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-btn:hover {
+    background-color: #333;
+}
+
